@@ -6,3 +6,5 @@ from .serializers import SucursalesSerializer
 class SucursalesView(viewsets.ModelViewSet):
     queryset = Sucursales.objects.all()
     serializer_class = SucursalesSerializer    
+
+##holis
