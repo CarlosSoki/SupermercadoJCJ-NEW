@@ -42,3 +42,5 @@ class UserDetailsView(viewsets.ModelViewSet):
 class CarritoView(viewsets.ModelViewSet):
     queryset = Carrito.objects.all()
     serializer_class = CarritoSerializer
+
+#def producto_with_price():

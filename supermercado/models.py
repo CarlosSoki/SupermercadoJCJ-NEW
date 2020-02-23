@@ -33,7 +33,7 @@ class Producto(models.Model):  #lo segundo crear el modelo de la tabla
     descripcion = models.TextField(blank=True, max_length=100, verbose_name='Descripcion:', help_text='Ingrese la Descripción del prodcuto')
     imagen = models.FileField(upload_to='image_produc', blank=False, verbose_name='Imagen Producto:', help_text='Ingrese la imagen del prodcuto')
     id_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, verbose_name='Categoria Producto:', help_text='Ingrese la categoria del producto')
-   
+    
     def __str__(self):
         return self.nombre #, self.precio, self.descripcion
 
